@@ -15,12 +15,12 @@
 1. 在 iPad App Store 下载免费 Git 工具 **Working Copy**。
 2. 点击 `+` $\to$ **Clone repository**，填入仓库地址：
    ```text
-   [https://github.com/Evelina-IS/lecture-handouts.git](https://github.com/Evelina-IS/lecture-handouts.git)
-每次电脑更新讲义后，在 App 内点击 Pull 即可实现离线全量同步。💻 Mac 使用指南1. 同步与查看打开终端（Terminal）克隆仓库：Bashgit clone [https://github.com/Evelina-IS/lecture-handouts.git](https://github.com/Evelina-IS/lecture-handouts.git) ~/lecture-handouts
+   [https://github.com/Evelina-IS/lecture-handouts.git](https://github.com/Evelina-IS/lecture-handouts.git)```
+## 💻 Mac 使用指南
+1. 同步与查看打开终端（Terminal）克隆仓库：Bashgit clone [https://github.com/Evelina-IS/lecture-handouts.git](https://github.com/Evelina-IS/lecture-handouts.git) ~/lecture-handouts
 cd ~/lecture-handouts
 git pull
 2. 编译 LaTeX (.tex $\to$ .pdf)若安装了 MacTeX，可直接在终端编译：Bashxelatex -interaction=nonstopmode *.tex
-🖥️ Windows 使用指南1. 同步仓库在 PowerShell 或 Git Bash 中执行：PowerShellgit clone [https://github.com/Evelina-IS/lecture-handouts.git](https://github.com/Evelina-IS/lecture-handouts.git)
-2. 本地查看与编译阅读与批注：直接使用 Edge、Acrobat 或 Drawboard PDF 打开 .pdf。修改与编译：可使用 VS Code（配合 LaTeX Workshop 插件）或 TeXstudio 打开 .tex 源码，选择编译器为 XeLaTeX 一键编译。⚙️ 快捷同步脚本（WSL2 / Linux 端）在生成新的讲义后，在本地终端运行以下命令即可全自动推送更新：Bashgit add .
-git commit -m "Update lecture handouts $(date '+%Y-%m-%d')"
-git push origin main
+## 🖥️ Windows 使用指南
+1. 同步仓库在 PowerShell 或 Git Bash 中执行：PowerShellgit clone [https://github.com/Evelina-IS/lecture-handouts.git](https://github.com/Evelina-IS/lecture-handouts.git)
+2. 本地查看与编译阅读与批注：直接使用 Edge、Acrobat 或 Drawboard PDF 打开 .pdf。修改与编译：可使用 VS Code（配合 LaTeX Workshop 插件）或 TeXstudio 打开 .tex 源码，选择编译器为 XeLaTeX 一键编译。⚙️ 快捷同步脚本（WSL2 / Linux 端）在生成新的讲义
