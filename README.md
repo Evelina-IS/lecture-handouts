@@ -1,4 +1,4 @@
-```markdown
+
 # Qwen2.5-3B-Instruct Academic Handout LoRA
 
 基于 `Qwen/Qwen2.5-3B-Instruct` 经过 LoRA 微调的学术讲义排版生成模型。专门用于将课程课件（PDF / PPTX）的内容重构为符合规范排版、包含公式推导、例题环境及结构化章节的 A4 中文学术讲义（LaTeX `ctexart` 格式）。
@@ -144,4 +144,4 @@ iPad 操作系统受沙盒机制与框架限制，无法直接本地运行 PyTor
 
 ```
 
-```
+
