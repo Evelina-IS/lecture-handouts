@@ -1,0 +1,149 @@
+\documentclass[11pt]{ctexart}
+\usepackage{amsmath,amssymb,amsfonts,graphicx,hyperref}
+
+\title{证券投资学（专题）\\第1周}
+\author{周舟}
+\date{\today}
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{example}{例题}[section]
+\begin{document}
+
+\maketitle
+
+\chapter*{课程说明与导入}
+
+\section*{为什么要学投资学}
+
+投资是每个人跨期决策的一部分，它关乎我们的生活质量与财务安全。投资的本质在于通过金融工具将未来的购买力转移到现在，同时为承担不确定性支付额外的成本。
+
+\subsection*{案例分析}
+
+\begin{itemize}
+    \item 你未来30年的最大一笔支出可能是退休后的医疗费用。
+    \item 如果年通胀率为2.5%，30年后100元的购买力还剩多少？
+    \item 解析：$100 \div 1.025^{30} \approx 47.7$元。
+\end{itemize}
+
+\section*{学习方法}
+
+\begin{itemize}
+    \item 把公式当成“翻译”：理解公式背后的含义。
+    \item 动手算比看懂重要：亲自计算一遍才能真正掌握。
+    \item 带着问题读新闻：每周挑选一条财经新闻，用学到的知识解释它。
+\end{itemize}
+
+\chapter*{金融资产与金融市场}
+
+\section*{实物资产与金融资产}
+
+\subsection*{实物资产}
+
+实物资产（Real Assets）：
+\begin{itemize}
+    \item 构成经济体的真实生产能力。
+    \item 土地、厂房、设备、基础设施、技术与人力资本。
+    \item 直接创造产品和服务，产生净收入。
+    \item 社会财富总量由实物资产决定。
+\end{itemize}
+
+\subsection*{金融资产}
+
+金融资产（Financial Assets）：
+\begin{itemize}
+    \item 对实物资产所产生现金流的索取权。
+    \item 股票、债券、基金份额、衍生合约。
+    \item 本身不创造产品，但决定收入如何分配。
+    \item 在整个社会层面互相抵消：有资产必有负债。
+\end{itemize}
+
+\subsection*{三类金融资产}
+
+\begin{itemize}
+    \item 债：固定收益证券。
+    \item 股：权益证券。
+    \item 衍：衍生证券。
+\end{itemize}
+
+\subsection*{市场分层}
+
+\begin{itemize}
+    \item 货币市场（≤1年）：
+    \begin{itemize}
+        \item 国库券、同业存单（NCD）、回购（质押式回购）。
+        \item 商业票据、银行承兑汇票。
+        \item 特点：期限短、流动性强、信用风险低。
+        \item 基准利率参考：DR007、LPR、SHIBOR。
+        \item 货币基金的主要投资标的。
+    \end{itemize}
+
+    \item 资本市场（>1年）：
+    \begin{itemize}
+        \item 国债、地方政府债、政策性金融债。
+        \item 公司债、企业债、中期票据。
+        \item 股票：主板、创业板、科创板、北交所。
+        \item 衍生品：股指期货、国债期货、ETF期权。
+        \item 特点：期限长，价格对利率与预期更敏感。
+    \end{itemize}
+\end{itemize}
+
+\section*{中国市场}
+
+\subsection*{市场指数}
+
+\begin{itemize}
+    \item 市场指数的编制与功能：
+    \begin{itemize}
+        \item 基准功能：用一个数概括整个市场的涨跌，为业绩评价提供参照系。
+        \item 宏观信号功能：股价包含对未来盈利的预期，指数常被视为经济的先行指标之一。
+        \item 投资标的功能：为股指期货、股指期权提供标的。
+        \item 复制模板功能：指数基金与ETF按指数成分与权重被动复制。
+    \end{itemize}
+
+    \subsection*{指数编制}
+
+    \begin{itemize}
+        \item 两种主流加权方式：
+        \begin{itemize}
+            \item 价格加权：道琼斯工业平均指数（DJIA）采用；高价股影响大，需用除数修正拆股与成分变动。
+            \item 市值加权：S&P 500、上证综指、沪深300采用；大市值公司影响大，可用自由流通量调整。
+        \end{itemize}
+
+        \item 第三种：等权重指数——对每只成分股赋予相同权重，需要定期再平衡，隐含“逆势调仓”。
+
+        \item 权重方式不同，指数讲的“故事”就不同：同一天，价格加权与市值加权可以给出相反的涨跌方向。
+    \end{itemize}
+
+\section*{课堂例题}
+
+\subsection*{除数修正法}
+
+\begin{example}
+    某股市以A、B两只股票为样本股，基期平均股价为100元。某日收盘价分别为150元和50元。当日盘后公司B公告以“十送十”方式将总股本扩大一倍。次日A、B开盘价分别为150元和50元。
+    \begin{enumerate}
+        \item 计算除数修正后的基期平均股价。
+        \item 计算次日收盘时的基期平均股价。
+    \end{enumerate}
+\end{example}
+
+\begin{solution}
+    \begin{enumerate}
+        \item 基期平均股价为100元，总股本为100元。
+        \item 当日收盘价分别为150元和50元，总股本扩大一倍，变为200元。
+        \item 除数修正后的基期平均股价为：
+        \[
+            \frac{150 \times 200 + 50 \times 200}{200} = \frac{30000 + 10000}{200} = \frac{40000}{200} = 200 \text{元}
+        \]
+        \item 次日收盘时的基期平均股价为：
+        \[
+            \frac{150 \times 200 + 50 \times 200}{200} = 200 \text{元}
+        \]
+    \end{enumerate}
+\end{solution}
+
+\end{document}
+```
+
+这段代码生成了一个完整的 LaTeX 学术讲义，包含了课程介绍、学习方法、金融资产与金融市场等内容，还包括了一个课堂例题及其解答。
+\end{itemize}
